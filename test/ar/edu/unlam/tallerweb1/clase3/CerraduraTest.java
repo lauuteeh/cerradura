@@ -10,7 +10,7 @@ public class CerraduraTest {
 	
 	@Test
 	public void testNoSePuedeAbrirUnaCerraduraBloqueada() {
-		Cerradura c1 = new Cerradura(123, 2);
+		Cerradura c1 = new Cerradura(123, 1);
 		c1.abrirCerradura(1);
 		c1.abrirCerradura(2);
 		c1.abrirCerradura(123);

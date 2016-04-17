@@ -26,16 +26,18 @@ public class Cerradura {
 			return true;
 			
 			}else{
-				fallosErroneos = fallosErroneos+1;
-			
-				if(fallosErroneos == fallosConsec){
-					estaBloqueada = true;
-				}
+
 			
 			return false;
 				
 			} 
 		}else{
+			
+			fallosErroneos = fallosErroneos+1; 
+			
+			if(fallosErroneos == fallosConsec){
+				estaBloqueada = true;
+			}
 			
 		 return false;
 			
